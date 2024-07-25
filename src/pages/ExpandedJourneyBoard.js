@@ -6,12 +6,32 @@ import FrameComponent1 from "../components/FrameComponent1";
 import StructurePointersContainer1 from "../components/StructurePointersContainer1";
 import "./ExpandedJourneyBoard.css";
 import { Link } from "react-router-dom";
-import {data} from '../util/data'
-import { useState } from "react";
+// import {data} from '../util/data'
+import { useEffect, useState } from "react";
 import TaskTitle from "../components/Tasktitle";
 const ExpandedJourneyBoard = () => {
-  const [Task, setTask] = useState(data.tasks);
-
+  const [Task, setTask] = useState([]);
+  useEffect(() => {
+    async function getData() {
+      try {
+        const response = await fetch('http://localhost:5001/api/task', {
+          method: 'GET', // or 'POST', 'PUT', etc. depending on your request type
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        });
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const result = await response.json();
+        setTask(result?.data[0]?.tasks)
+      } catch (error) {
+        console.error('Fetch error:', error);
+      }
+      ;
+    }
+    getData();
+  }, []);
  
   return (
     <div className="expanded-journey-board">
