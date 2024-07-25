@@ -5,8 +5,14 @@ import FrameComponent2 from "../components/FrameComponent2";
 import FrameComponent1 from "../components/FrameComponent1";
 import StructurePointersContainer1 from "../components/StructurePointersContainer1";
 import "./ExpandedJourneyBoard.css";
-
+import { Link } from "react-router-dom";
+import {data} from '../util/data'
+import { useState } from "react";
+import TaskTitle from "../components/Tasktitle";
 const ExpandedJourneyBoard = () => {
+  const [Task, setTask] = useState(data.tasks);
+
+ 
   return (
     <div className="expanded-journey-board">
       <section className="frame-group">
@@ -29,11 +35,13 @@ const ExpandedJourneyBoard = () => {
                     <div className="journey-board-wrapper">
                       <div className="journey-board">Journey Board</div>
                     </div>
+                    <Link to={`/`}>
                     <img
                       className="screenshot-from-2024-06-19-11-"
                       alt=""
                       src="/screenshot-from-20240619-115844-11@2x.png"
                     />
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -94,25 +102,11 @@ const ExpandedJourneyBoard = () => {
                     />
                     <div className="rectangle-parent1">
                       <div className="rectangle-div" />
-                      <div className="explore-the-world-container">
-                        <ul className="explore-the-world-of-managemen">
-                          <li>Explore the world of management</li>
-                        </ul>
-                      </div>
-                      <div className="technical-project-management-container">
-                        <ul className="technical-project-management2">
-                          <li className="technical-project-management3">
-                            {" "}
-                            Technical Project Management
-                          </li>
-                          <li className="threadbuild"> Threadbuild</li>
-                          <li className="structure-your-pointers">
-                            {" "}
-                            Structure your pointers
-                          </li>
-                          <li> 4SA Method</li>
-                        </ul>
-                      </div>
+                      
+                      {Task.map(eachTask => (
+                       <TaskTitle eachTask={eachTask}/>
+            ))}
+                  
                     </div>
                   </div>
                   <FrameComponent2 propBorderRadius="30px" />

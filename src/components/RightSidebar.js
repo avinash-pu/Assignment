@@ -4,6 +4,7 @@ import FrameComponent2 from "./FrameComponent2";
 import FrameComponent1 from "./FrameComponent1";
 import PropTypes from "prop-types";
 import "./RightSidebar.css";
+import { Link } from "react-router-dom";
 
 const RightSidebar = ({ className = "" }) => {
   return (
@@ -13,12 +14,15 @@ const RightSidebar = ({ className = "" }) => {
           <div className="notice-board-content-child" />
           <div className="notice-board-container">
             <div className="notice-board-container-child" />
+            <Link to={`/expanded-journey-board`}>
             <img
               className="screenshot-from-2024-06-19-11-1"
               loading="lazy"
               alt=""
               src="/screenshot-from-20240619-115844-1@2x.png"
             />
+            </Link>
+           
           </div>
           <div className="notice-board-details">
             <div className="notice-board-details-child" />
