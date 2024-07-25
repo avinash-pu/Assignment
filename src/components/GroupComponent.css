@@ -1,0 +1,210 @@
+.frame-child1 {
+  height: 90px;
+  width: 1440px;
+  position: relative;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: var(--color-whitesmoke-200);
+  display: none;
+  max-width: 100%;
+}
+.ellipse-div {
+  height: 32.5px;
+  width: 30.3px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-white);
+}
+.logo-1-icon {
+  height: 49px;
+  width: 311px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: contain;
+  z-index: 1;
+}
+.home-button-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background-color: var(--info);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.div1 {
+  position: absolute;
+  top: 6.5px;
+  left: 7px;
+  letter-spacing: 0.02em;
+  display: inline-block;
+  width: 17px;
+  height: 18.3px;
+  min-width: 17px;
+  z-index: 2;
+}
+.home-button-background-parent {
+  height: 32.4px;
+  width: 30px;
+  position: relative;
+}
+.group-icon {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.group-div,
+.tools {
+  position: relative;
+  z-index: 1;
+}
+.tools {
+  text-decoration: none;
+  flex: 1;
+  letter-spacing: 0.02em;
+  color: inherit;
+}
+.group-div {
+  width: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-6xs-5) var(--padding-6xs) var(--padding-5xs-6)
+    var(--padding-5xs);
+  box-sizing: border-box;
+}
+.search-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 2;
+}
+.contact {
+  position: absolute;
+  top: 7px;
+  left: 18.6px;
+  border-radius: 50%;
+  background-color: var(--color-crimson);
+  width: 7.1px;
+  height: 7.6px;
+  z-index: 3;
+}
+.search-icon-parent {
+  height: 33.5px;
+  width: 31.2px;
+  position: relative;
+}
+.search-settings-background {
+  width: 37px;
+  height: 37px;
+  position: relative;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 1;
+}
+.search-settings-button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-8xs) 0 0;
+}
+.overflow-menu-icons,
+.overflow-menu-icons1,
+.overflow-menu-icons2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background-color: var(--info);
+  width: 3px;
+  height: 3px;
+  z-index: 1;
+}
+.overflow-menu-icons1,
+.overflow-menu-icons2 {
+  top: 6px;
+}
+.overflow-menu-icons2 {
+  top: 12px;
+}
+.overflow-menu-icons-parent {
+  width: 3px;
+  height: 15px;
+  position: relative;
+}
+.overflow-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-3xs-4);
+}
+.frame-parent4 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 var(--padding-9xs) 0 0;
+  gap: var(--gap-xl);
+}
+.frame-wrapper2,
+.group-header {
+  display: flex;
+  box-sizing: border-box;
+}
+.frame-wrapper2 {
+  width: 224px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-9xs-6);
+}
+.group-header {
+  align-self: stretch;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: var(--color-whitesmoke-200);
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  padding: var(--padding-xl) var(--padding-xl) var(--padding-2xl);
+  gap: var(--gap-720xl);
+  top: 0;
+  z-index: 99;
+  position: sticky;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-mini);
+  color: var(--color-white);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 1200px) {
+  .group-header {
+    gap: var(--gap-350xl);
+  }
+}
+@media screen and (max-width: 750px) {
+  .group-header {
+    gap: var(--gap-166xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .group-header {
+    gap: var(--gap-73xl);
+  }
+}

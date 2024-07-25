@@ -1,0 +1,51 @@
+.frame-child2 {
+  width: 1066px;
+  height: 135px;
+  position: relative;
+  border-radius: var(--br-8xs);
+  background-color: var(--color-whitesmoke-300);
+  display: none;
+  max-width: 100%;
+}
+.as-a-project,
+.explore-the-world {
+  position: relative;
+  letter-spacing: 0.02em;
+  z-index: 1;
+}
+.explore-the-world {
+  margin: 0;
+  width: 374px;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+}
+.as-a-project {
+  align-self: stretch;
+  font-size: var(--font-size-sm);
+}
+.rectangle-parent2 {
+  align-self: stretch;
+  border-radius: var(--br-8xs);
+  background-color: var(--color-whitesmoke-300);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-6xl) var(--padding-xl) var(--padding-6xl)
+    var(--padding-8xl);
+  box-sizing: border-box;
+  gap: var(--gap-3xs);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 450px) {
+  .explore-the-world {
+    font-size: var(--font-size-base);
+  }
+}

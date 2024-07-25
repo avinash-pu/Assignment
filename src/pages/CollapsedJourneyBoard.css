@@ -1,0 +1,29 @@
+.collapsed-journey-board,
+.frame-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.frame-parent {
+  align-self: stretch;
+  align-items: flex-start;
+  padding: 0;
+  max-width: 100%;
+}
+.collapsed-journey-board {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  align-items: flex-end;
+  padding: 0 0 var(--padding-lg);
+  gap: var(--gap-38xl);
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 750px) {
+  .collapsed-journey-board {
+    gap: var(--gap-9xl);
+  }
+}

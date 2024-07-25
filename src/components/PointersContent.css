@@ -1,0 +1,301 @@
+.pointers-content-child {
+  width: 481px;
+  height: 401px;
+  position: relative;
+  border-radius: 0 0 var(--br-mini) var(--br-mini);
+  background-color: var(--color-gray-100);
+  border: 1px solid var(--color-lightgray-200);
+  box-sizing: border-box;
+  display: none;
+  max-width: 100%;
+}
+.article-divider,
+.title {
+  position: relative;
+  z-index: 2;
+}
+.title {
+  width: 85px;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  display: inline-block;
+}
+.article-divider {
+  border: 0;
+  outline: 0;
+  background-color: var(--color-gray-300);
+  align-self: stretch;
+  height: 43px;
+  box-shadow: -2px 2px 6px rgba(0, 0, 0, 0.15);
+  border-radius: var(--br-8xs);
+  min-width: 250px;
+}
+.pointers-article {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.content {
+  width: 85px;
+  position: relative;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  display: inline-block;
+  z-index: 2;
+}
+.article-actions-child {
+  width: 422px;
+  height: 82px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
+  border-radius: var(--br-8xs) var(--br-8xs) 0 0;
+  background-color: var(--color-gray-300);
+  display: none;
+  max-width: 100%;
+}
+.file {
+  min-width: 22px;
+}
+.edit,
+.file,
+.view {
+  position: relative;
+  letter-spacing: 0.02em;
+  display: inline-block;
+  z-index: 4;
+}
+.edit {
+  text-decoration: none;
+  color: inherit;
+  min-width: 24px;
+}
+.view {
+  min-width: 30px;
+}
+.insert {
+  flex: 1;
+  min-width: 23px;
+}
+.format,
+.help,
+.insert,
+.table,
+.tools1 {
+  position: relative;
+  letter-spacing: 0.02em;
+  display: inline-block;
+  z-index: 4;
+}
+.format {
+  flex: 1;
+  min-width: 30px;
+}
+.help,
+.table,
+.tools1 {
+  min-width: 33px;
+}
+.help,
+.table {
+  min-width: 35px;
+}
+.help {
+  min-width: 28px;
+}
+.actions-dropdown,
+.dropdown-items {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.dropdown-items {
+  flex: 1;
+  gap: var(--gap-mini);
+}
+.actions-dropdown {
+  width: 369px;
+  padding: 0 var(--padding-8xs);
+  box-sizing: border-box;
+}
+.arrow-curve-left-right-icon {
+  width: 21px;
+  height: 18px;
+  position: relative;
+  object-fit: contain;
+  z-index: 4;
+}
+.arrow-curve-left-right-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-12xs) 0 0;
+}
+.arrow-curve-left-down-icon {
+  width: 19px;
+  height: 19px;
+  position: relative;
+  object-fit: contain;
+  z-index: 4;
+}
+.arrow-curve-left-down-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-7xs) 0 0;
+}
+.arrow-expand-02-icon {
+  height: 19px;
+  width: 19px;
+  position: relative;
+  z-index: 4;
+}
+.paragraph-button-child {
+  height: 18px;
+  width: 102px;
+  position: relative;
+  background-color: var(--color-whitesmoke-400);
+  display: none;
+}
+.paragraph {
+  width: 78px;
+  position: relative;
+  letter-spacing: 0.02em;
+  display: inline-block;
+  flex-shrink: 0;
+  z-index: 5;
+}
+.paragraph-button {
+  align-self: stretch;
+  background-color: var(--color-whitesmoke-400);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-12xs) var(--padding-10xs) 0;
+  z-index: 4;
+}
+.arrow-expand-02-parent,
+.paragraph-button-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.paragraph-button-wrapper {
+  flex-direction: column;
+  padding: var(--padding-12xs) 0 0;
+}
+.arrow-expand-02-parent {
+  flex-direction: row;
+  gap: var(--gap-base);
+}
+.bullet-icon,
+.letter-list-icon,
+.numbered-list-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background-color: var(--color-dimgray-100);
+  width: 5px;
+  height: 5px;
+  z-index: 4;
+}
+.letter-list-icon,
+.numbered-list-icon {
+  left: 7px;
+}
+.letter-list-icon {
+  left: 14px;
+}
+.list-icons {
+  width: 19px;
+  height: 5px;
+  position: relative;
+}
+.actions-navigation,
+.list-icons-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-6xs) 0 0;
+}
+.actions-navigation {
+  width: 234px;
+  flex-direction: row;
+  padding: 0 var(--padding-11xs) 0 0;
+  box-sizing: border-box;
+  gap: var(--gap-3xs);
+}
+.article-actions,
+.article-footer-child {
+  background-color: var(--color-gray-300);
+  align-self: stretch;
+}
+.article-actions {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
+  border-radius: var(--br-8xs) var(--br-8xs) 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-smi) var(--padding-mini) var(--padding-base);
+  box-sizing: border-box;
+  gap: var(--gap-smi);
+  max-width: 100%;
+  z-index: 3;
+}
+.article-footer-child {
+  border: 0;
+  height: 142px;
+  width: auto;
+  outline: 0;
+  position: relative;
+  box-shadow: -2px 2px 6px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+}
+.article-body,
+.article-footer,
+.pointers-content {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.article-footer {
+  font-size: var(--font-size-xs);
+  color: var(--color-dimgray-100);
+  font-family: var(--font-poppins);
+}
+.article-body,
+.pointers-content {
+  gap: var(--gap-base);
+}
+.pointers-content {
+  border-radius: 0 0 var(--br-mini) var(--br-mini);
+  background-color: var(--color-gray-100);
+  border: 1px solid var(--color-lightgray-200);
+  box-sizing: border-box;
+  padding: var(--padding-7xl) var(--padding-6xl) 0 var(--padding-11xl);
+  gap: var(--gap-9xl);
+  z-index: 1;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-open-sans);
+}
+@media screen and (max-width: 450px) {
+  .dropdown-items {
+    flex-wrap: wrap;
+  }
+}
